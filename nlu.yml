@@ -1,0 +1,365 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - perfect
+    - very good
+
+- intent: brands 
+  examples: |
+    - [Audi]{"entity":"car_brand","value":"Audi"}
+    - [Bmw]{"entity":"car_brand","value":"Bmw"}
+    - [Citroen]{"entity":"car_brand","value":"Citroen"}
+    - [Dacia]{"entity":"car_brand","value":"Dacia"}
+    - [Fiat]{"entity":"car_brand","value":"Fiat"}
+    - [Ford]{"entity":"car_brand","value":"Ford"}
+    - [Mercedes]{"entity":"car_brand","value":"Mercedes"}
+    - [Nissan]{"entity":"car_brand","value":"Nissan"}
+    - [Opel]{"entity":"car_brand","value":"Opel"}
+    - [Peugeot]{"entity":"car_brand","value":"Peugeot"}
+    - [Renault]{"entity":"car_brand","value":"Renault"}
+    - [Toyota]{"entity":"car_brand","value":"Toyota"}
+    - [Volkswagen]{"entity":"car_brand","value":"Volkswagen"}
+
+- intent: carmodel
+  examples: |
+    - [1.0i]{"entity":"models"}
+    - [1.1i SX]{"entity":"models"}
+    - [1,2I 12V]{"entity":"models"}
+    - [1.2 PureTech 110ch S]{"entity":"models"}
+    - [1.2 60 eco2 Authentique]{"entity":"models"}
+    - [1.3 GLX]{"entity":"models"}
+    - [1.4i Classic]{"entity":"models"}
+    - [1.4i 16V Initiale A]{"entity":"models"}
+    - [1.4 16v Confort Authentique]{"entity":"models"}
+    - [1.4 HDi Urban ***vente marchande]{"entity":"models"}
+    - [1.6 HDi 110 FAP Exclusive]{"entity":"models"}
+    - [1.6 HDI 92 CV Pack Clim]{"entity":"models"}
+    - [1.6 16V Pack Confort A]{"entity":"models"}
+    - [1.6I 115CH LS BA 5P]{"entity":"models"}
+    - [1.6 TDCi - 90 Trend TBG .... 2100E]{"entity":"models"}
+    - [1.8i 16V TBG 1890E]{"entity":"models"}
+    - [1.8 i 90 CV Cabriolet Edition Karman]{"entity":"models"}
+    - [1.8 TDCi GHIA]{"entity":"models"}
+    - [1.9 TDI / Boite Automatique]{"entity":"models"}
+    - [2008]{"entity":"models"}
+    - [208]{"entity":"models"}
+    - [2.0 CRDi 136 CV]{"entity":"models"}
+    - [2.0 HDI 110]{"entity":"models"}
+    - [2.0 16V Conquest]{"entity":"models"}
+    - [2.0 dCi 150 Dynamique **Vente Marchande**]{"entity":"models"}
+    - [2.0 L 115 Ch Ann\u00e9e 1990]{"entity":"models"}
+    - [3008]{"entity":"models"}
+    - [308]{"entity":"models"}
+    - [500]{"entity":"models"}
+    - [80 16V 131585kms 1790\u20ac]{"entity":"models"}
+    - [AFFAIRE 1.4 HDI ENTREPRISE 2 CTTE]{"entity":"models"}
+    - [C3]{"entity":"models"}
+    - [Captur]{"entity":"models"}
+    - [CC 2.0 16V - 180ch]{"entity":"models"}
+    - [Clio]{"entity":"models"}
+    - [D5 185CH FAP h.s SUMMUM 5 PLACES]{"entity":"models"}
+    - [Evolution 2.0T Privilge Proactive A]{"entity":"models"}
+    - [FGTTE 600KG 1.9D CLUB ENTREPRISE]{"entity":"models"}
+    - [Golf]{"entity":"models"}
+    - [II 1.2 LEV 16v 75 eco2*** Vente \u00e0 Marchand]{"entity":"models"}
+    - [II 1.5 dCi 85 Dynamique Extreme Design' **VENDU**]{"entity":"models"}
+    - [II FG L1H1 2T8 2.2 DCI 90CH]{"entity":"models"}
+    - [Kadjar]{"entity":"models"}
+    - [Megane]{"entity":"models"}
+    - [Matra Bagheera S d\u00e9couvrable]{"entity":"models"}
+    - [Scenic]{"entity":"models"}
+    - [Sport Pack]{"entity":"models"}
+    - [SERIE 3 TOURING E91 Touring 163ch pack M sport]{"entity":"models"}
+    - [SW 1.6 HDi 110ch FAP BVM6 BLUE LION Navteq]{"entity":"models"}
+    - [SW 2.0 HDi 16v Ex\u00e9cutive]{"entity":"models"}
+    - [Twingo]{"entity":"models"}
+    - [Test Listing for AT]{"entity":"models"}
+    - [Vendue. Vous recherchez un v\u00e9hicule demandez-nous]{"entity":"models"}
+
+- intent: location
+  examples: |
+    - [Alsace]{"entity":"region","value":"Alsace"}
+    - [Aquitaine]{"entity":"region","value":"Aquitaine"}
+    - [Auvergne]{"entity":"region","value":"Auvergne"}
+    - [Ardenne]{"entity":"region","value":"Ardenne"}
+    - [Burgundy]{"entity":"region","value":"Burgundy"}
+    - [Brittany]{"entity":"region","value":"Brittany"}
+    - [Center]{"entity":"region","value":"Center"}
+    - [Corsica]{"entity":"region","value":"Corsica"}
+    - [Charentes]{"entity":"region","value":"Charentes"}
+    - [Franche]{"entity":"region","value":"Franche"}
+    - [Ile-de-France]{"entity":"region","value":"Ile-de-France"}
+    - [Lower-Normandy]{"entity":"region","value":"Lower-Normandy"}
+    - [Loire-Country]{"entity":"region","value":"Loire-Country"}
+    - [Languedoc]{"entity":"region","value":"Languedoc"}
+    - [Lorraine]{"entity":"region","value":"Lorraine"}
+    - [Limousin]{"entity":"region","value":"Limousin"}
+    - [Midi-Pyrenees]{"entity":"region","value":"Midi-Pyrenees"}
+    - [Nord-Pas-de-Calais]{"entity":"region","value":"Nord-Pas-de-Calais"}
+    - [Picardie]{"entity":"region","value":"Picardie"}
+    - [Provence-Alpes-Côte-d'Azur]{"entity":"region","value":"Provence-Alpes-Côte-d'Azur"}
+    - [Rhône-Alpes]{"entity":"region","value":"Rhône-Alpes"}
+    - [Upper-Normandy]{"entity":"region","value":"Upper-Normandy"}
+
+- intent: mode_request
+  examples: |
+    - I want to [buy a car]{"entity":"request"}
+    - I want to [sell a car]{"entity":"request"}
+    - I want to [buy car]{"entity":"request"}
+    - I want to [sell car]{"entity":"request"}
+    - [buy car]{"entity":"request"}
+    - [sell car]{"entity":"request"}
+    - [buying car]{"entity":"request"}
+    - [selling car]{"entity":"request"}
+    - [buy]{"entity":"request"}
+    - [sell]{"entity":"request"}
+
+- intent: gearbox
+  examples: |
+    - automatic{"entity":"mode_gear"}
+    - mechanical{"entity":"mode_gear"}
+
+- intent: seller-type
+  examples: |
+    - individual{"entity":"type_of_sellar"}
+    - dealer {"entity":"type_of_sellar"}
+    - agent{"entity":"type_of_sellar"}
+    - multi-brand-center{"entity":"type_of_sellar"}
+    - renter{"entity":"type_of_sellar"}
+    - garagiste{"entity":"type_of_sellar"}
+    - approved-repairer{"entity":"type_of_sellar"}
+    - Vendeur professionnel{"entity":"type_of_sellar"}
+
+- intent: phone
+  examples: |
+    - +33 (0)3 - 22666600{"entity":"phone_no"}
+    - +33 (0)7 - 78568604{"entity":"phone_no"}
+    - +33 (0)4 - 78707608{"entity":"phone_no"}
+    - +33 (0)1 - 74596684{"entity":"phone_no"}
+    - +33 (0)3 - 89322911{"entity":"phone_no"}
+    - +33 (0)6 - 34537585{"entity":"phone_no"}
+    - +33 (0)3 - 82243922{"entity":"phone_no"}
+    - +33 (0)1 - 41640442{"entity":"phone_no"}
+    - +33 (0)7 - 71189444{"entity":"phone_no"}
+
+- intent: year
+  examples: |
+    - [12/2018]{"entity":"date"}
+    - [03/2007]{"entity":"date"}
+    - [01/2006]{"entity":"date"}
+    - [09/2005]{"entity":"date"}
+    - [03/2003]{"entity":"date"}
+    - [04/2013]{"entity":"date"}
+    - [05/2009]{"entity":"date"}
+    - [07/2005]{"entity":"date"}
+    - [03/2007]{"entity":"date"}
+    - [01/1998]{"entity":"date"}
+    - [02/2000]{"entity":"date"}
+    - [09/2004]{"entity":"date"}
+    - [10/2001]{"entity":"date"}
+    - [08/2002]{"entity":"date"}
+    - [02/2006]{"entity":"date"}
+    - [10/2000]{"entity":"date"}
+    - [06/2009]{"entity":"date"}
+    - [10/2005]{"entity":"date"}
+    - [11/1999]{"entity":"date"}
+    - [12/2004]{"entity":"date"}
+    - [04/1978]{"entity":"date"}
+    - [09/2006]{"entity":"date"}
+    - [09/1995]{"entity":"date"}
+    - [01/2017]{"entity":"date"}
+    - [08/2006]{"entity":"date"}
+    - [01/2010]{"entity":"date"}
+    - [07/2007]{"entity":"date"}
+    - [04/2012]{"entity":"date"}
+    - [12/2001]{"entity":"date"}
+    - [03/1997]{"entity":"date"}
+    - [04/2005]{"entity":"date"}
+    - [01/2010]{"entity":"date"}
+    - [02/2008]{"entity":"date"}
+    - [01/2005]{"entity":"date"}
+    - [06/2007]{"entity":"date"}
+    - [06/2003]{"entity":"date"}
+    - [06/2003]{"entity":"date"}
+    - [05/2007]{"entity":"date"}
+    - [05/2008]{"entity":"date"}
+    - [01/1990]{"entity":"date"}
+    - [05/2006]{"entity":"date"}
+    - [03/2006]{"entity":"date"}
+
+- intent: distance
+  examples: |
+    - [23]{"entity":"km"}
+    - [227.000]{"entity":"km"}
+    - [540.000]{"entity":"km"}
+    - [145.000]{"entity":"km"}
+    - [275.000]{"entity":"km"}
+    - [52.269]{"entity":"km"}
+    - [188.500]{"entity":"km"}
+    - [201.601]{"entity":"km"}
+    - [267.000]{"entity":"km"}
+    - [182.370]{"entity":"km"}
+    - [215.800]{"entity":"km"}
+
+- intent: consumption
+  examples: |
+    - [4L/100km]{"entity":"KILOMETRE"}
+    - [5L/100km]{"entity":"KILOMETRE"}
+    - [6L/100km]{"entity":"KILOMETRE"}
+    - [7L/100km]{"entity":"KILOMETRE"}
+    - [9L/100km]{"entity":"KILOMETRE"}
+    - [13L/100km]{"entity":"KILOMETRE"}
+    - [17L/100km]{"entity":"KILOMETRE"}
+
+- intent: cost
+  examples: |
+    - [500€]{"entity":"price"}
+    - [1000€]{"entity":"price"}
+    - [5000€]{"entity":"price"}
+    - [68954€]{"entity":"price"}
+    - [25580€]{"entity":"price"}
+
+- intent: car_power
+  examples: |
+    - [00]{"entity":"power"}
+    - [23]{"entity":"power"}
+    - [72]{"entity":"power"}
+    - [58]{"entity":"power"}
+    - [44]{"entity":"power"}
+    - [81]{"entity":"power"}
+    - [50]{"entity":"power"}
+
+
+- intent: interior-color
+  examples: |
+    - beige{"entity":"color_name"}
+    - white{"entity":"color_name"}
+    - blue{"entity":"color_name"}
+    - fauve{"entity":"color_name"}
+    - grey{"entity":"color_name"}
+    - ivory{"entity":"color_name"}
+    - brown{"entity":"color_name"}
+    - black{"entity":"color_name"}
+    - red{"entity":"color_name"}
+    
+- intent: exterieure-color
+  examples: |
+    - silver{"entity":"out_color"}
+    - beige{"entity":"out_color"}
+    - white{"entity":"out_color"}
+    - blue{"entity":"out_color"}
+    - bordeaux{"entity":"out_color"}
+    - gris{"entity":"out_color"}
+    - ivoire{"entity":"out_color"}
+    - yellow{"entity":"out_color"}
+    - marron{"entity":"out_color"}
+    
+- intent: my_name
+  examples: |
+    - my name is [ashish]{"entity":"name","value":"ashish"}
+    - my name is [rahul]{"entity":"name","value":"rahul"}
+    - my name is [apneet]{"entity":"name","value":"apneet"}
+    - [shashank]{"entity":"name","value":"shashank"}
+    - [kiran]{"entity":"name","value":"kiran"} this side
+    - people call me [ashish]{"entity":"name","value":"ashish"}    
+    - [tharun]{"entity":"name","value":"tharun"}
+    - [samules]{"entity":"name","value":"samules"}
+    - [vineeth]{"entity":"name","value":"samules"}
+    
+- intent: tell_name
+  examples: |
+    - what is your name?
+    - tell me your name
+    - what others call you
+    - what should i call you?
+
+- intent: seller_name
+  examples: |
+    - Musterstadt{entity:"sellar"}
+    - POULAINVILLE{entity:"sellar"}
+
+- intent: energy
+  examples: |
+    - diesel{"entity":"car_energy"}
+    - gasoline{"entity":"car_energy"}
+    - electric{"entity":"car_energy"}
+    - hybrids{"entity":"car_energy"}
+    - gasoline/LPG-bifuel{"entity":"car_energy"}
+    - bioethanol gasoline bifuel{"entity":"car_energy"}
+
+- intent: sell_my_car
+  examples: |
+    - i want to sell my car{"entity":"sell_car"}
+    - sell car{"entity":"sell_car"}
+    - sell my car{"entity":"sell_car"}
+    - want to sell this car{"entity":"sell_car"}
+    - sell this car{"entity":"sell_car"}
+    - sell{"entity":"sell_car"}
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
